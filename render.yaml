@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: ezsolver
+    runtime: docker
+    plan: free
+    region: oregon
+    envVars:
+      - key: PORT
+        value: 8191
+      - key: MAX_WORKERS
+        value: 1
+      - key: PYTHONUNBUFFERED
+        value: "1"
